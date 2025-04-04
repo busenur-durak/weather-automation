@@ -85,9 +85,9 @@ def save_data(date, temperature, humidity, wind_speed, wind_direction):
 
 # **📌 Send Email Function**
 def send_email(message):
-    GMAIL_ADDRESS = "your_email@gmail.com"  # Enter your email address
-    GMAIL_PASSWORD = "your_app_password"  # Enter your Gmail app password
-    RECIPIENT_EMAIL = "recipient_email@gmail.com"  # Enter the recipient's email address
+    GMAIL_ADDRESS = "durakbusenur21@gmail.com"  # Enter your email address
+    GMAIL_PASSWORD = "ykrz ntfv snjj kwvr"  # Enter your Gmail app password
+    RECIPIENT_EMAIL = "durakbusenur21@gmail.com"  # Enter the recipient's email address
 
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
@@ -175,9 +175,9 @@ def create_graphical_report():
     print("📊 Graphical report created and saved.")
 
 # **📌 Start Automation**
-schedule.every().day.at("13:10").do(fetch_weather_data)  # Fetch weather data every day at 13:10
-schedule.every().day.at("13:13").do(update_temperature_data)  # Update temperature data every day at 13:13
-schedule.every().monday.at("13:16").do(create_graphical_report)  # Create graphical report every Monday at 13:16
+schedule.every().day.at("08:00").do(fetch_weather_data)  # Fetch weather data every day at 13:10
+schedule.every().day.at("09:00").do(update_temperature_data)  # Update temperature data every day at 13:13
+schedule.every().monday.at("10:00").do(create_graphical_report)  # Create graphical report every Monday at 13:16
 
 print("Automatic weather data logging started...")
 
